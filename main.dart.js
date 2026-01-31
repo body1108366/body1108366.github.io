@@ -36380,8 +36380,9 @@ _.f=d
 _.r=e
 _.a=f},
 b2O:function b2O(a){this.a=a},
-tI:function tI(a,b){this.c=a
-this.a=b},
+tI:function tI(a,b,c){this.c=a
+this.d=b
+this.a=c},
 afd:function afd(){this.c=this.a=null},
 b3P:function b3P(a,b){this.a=a
 this.b=b},
@@ -36914,7 +36915,8 @@ bbW:function bbW(){},
 bbR:function bbR(a){this.a=a},
 bbY:function bbY(a,b){this.a=a
 this.b=b},
-bbO:function bbO(a){this.a=a},
+bbO:function bbO(a,b){this.a=a
+this.b=b},
 bbP:function bbP(){},
 bbQ:function bbQ(a,b){this.a=a
 this.b=b},
@@ -132885,7 +132887,9 @@ $S:788}
 A.tI.prototype={
 a7(){return new A.afd()}}
 A.afd.prototype={
-C(a){var s=null,r=A.D(a).ax.a===B.aA,q=r?B.f:B.S,p=r?B.kw:B.kC,o=A.h("My Analytics",s,s,s,s,A.B(s,s,q,s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)
+C(a){var s=null,r=A.D(a).ax.a===B.aA,q=r?B.f:B.S,p=r?B.kw:B.kC,o=this.a.d
+o=o!=null?o+"'s Analytics":"My Analytics"
+o=A.h(o,s,s,s,s,A.B(s,s,q,s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)
 return A.e1(A.ex(A.b([new A.dE(new A.b3P(this,q),s)],t.p),s,s,!0,B.G,s,1,!0,s,0,!1,s,!1,s,new A.d2(s,s,s,s,s,q,s,s,s),s,s,!0,s,s,s,s,s,o,s,s,s,1,s,!0),p,A.c5(new A.b3Q(this,q,r),t.XG),s,B.un,s,s,s,s)},
 aqd(a7,a8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5=null,a6=new A.aJ(Date.now(),0,!1)
 for(s=a7.length,r=0,q=0,p=0,o=0,n=0,m=0,l=0;l<a7.length;a7.length===s||(0,A.I)(a7),++l){k=a7[l]
@@ -133289,7 +133293,7 @@ A.b4i.prototype={
 $1(a){return a.fw()},
 $S:177}
 A.b4j.prototype={
-$1(a){return new A.tI(this.a,null)},
+$1(a){return new A.tI(this.a,null,null)},
 $S:307}
 A.b4k.prototype={
 $1(a){return new A.pT(this.a,"My Recurring Tasks Analytics",!1,null)},
@@ -135270,14 +135274,16 @@ $0(){return A.kX(this.a).rN()},
 $S:0}
 A.bbY.prototype={
 $1(a){var s,r,q=this.b,p=this.a,o=A.aT(q,!1,t.FP).LK(J.A(p.a.c,"email"))
-if(a==="regular"){p=A.dT(new A.bbO(A.el(o,!0,t.P)),null,t.z)
+if(a==="regular"){p=A.dT(new A.bbO(p,A.el(o,!0,t.P)),null,t.z)
 A.ax(q,!1).ee(p)}else if(a==="recurring"){s=A.P(o).i("ay<1>")
 r=A.Y(new A.ay(o,new A.bbP(),s),s.i("t.E"))
 p=A.dT(new A.bbQ(p,r),null,t.z)
 A.ax(q,!1).ee(p)}},
 $S:11}
 A.bbO.prototype={
-$1(a){return new A.tI(this.a,null)},
+$1(a){var s=this.a.a,r=s.d
+s=r==null?J.A(s.c,"name"):r
+return new A.tI(this.b,s,null)},
 $S:307}
 A.bbP.prototype={
 $1(a){var s=J.A(a,"frequency"),r=J.a2(s==null?"":s).toLowerCase()
