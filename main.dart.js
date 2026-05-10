@@ -143175,13 +143175,13 @@ break
 case 6:case 1:return A.r(q,r)
 case 2:return A.q(o.at(-1),r)}})
 return A.t($async$GB,r)},
-a_r(a){var s=t.s
-switch(a.toLowerCase()){case"ceo":return A.b(["Co CEO","Manager","Supervisor","Team Leader","Employee"],s)
-case"co ceo":return A.b(["Manager","Supervisor","Team Leader","Employee"],s)
-case"manager":return A.b(["Supervisor","Team Leader","Employee"],s)
-case"supervisor":return A.b(["Team Leader","Employee"],s)
-case"team leader":return A.b(["Employee"],s)
-default:return A.b([],s)}}}
+a_r(a){var s="Department Manager",r=t.s
+switch(a.toLowerCase()){case"ceo":return A.b(["Co CEO",s,"Supervisor","Team Leader","Employee"],r)
+case"co ceo":return A.b([s,"Supervisor","Team Leader","Employee"],r)
+case"department manager":return A.b(["Supervisor","Team Leader","Employee"],r)
+case"supervisor":return A.b(["Team Leader","Employee"],r)
+case"team leader":return A.b(["Employee"],r)
+default:return A.b([],r)}}}
 A.b4s.prototype={
 $1(a){var s=a.d2(0)
 s.toString
