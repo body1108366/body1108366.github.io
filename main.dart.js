@@ -136227,8 +136227,7 @@ aSu(a,b){var s=0,r=A.u(t.zO),q,p=this,o,n
 var $async$CL=A.p(function(c,d){if(c===1)return A.q(d,r)
 for(;;)switch(s){case 0:o=p.a
 n=o.rd(b)
-if(a<A.c8(n.ghg())){A.ar("closed")
-q=new A.bA(new A.G7(),t.XL)
+if(a<=A.c8(n.ghg())){q=new A.bA(new A.G7(),t.XL)
 s=1
 break}s=a===100?3:4
 break
@@ -136749,6 +136748,8 @@ else s=k>=1024?22:18
 r=t.Gr
 q=$.c1().$1$0(r)
 p=this.a.c
+o=q.y
+if(o!=null)o.aG(0)
 o=q.x
 n=o.b.rd(p)
 m=n.gio()
